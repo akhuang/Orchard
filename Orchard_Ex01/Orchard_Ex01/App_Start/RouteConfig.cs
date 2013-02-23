@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Orchard.Mvc.Routes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,6 +13,8 @@ namespace Orchard_Ex01
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+
+            routes.Add(new ShellRoute());
 
             routes.MapRoute(
                 name: "Default",
