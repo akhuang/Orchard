@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orchard_Ex01", "Orchard_Ex01\Orchard_Ex01.csproj", "{1B17844F-3A8C-451D-9C4E-0BB5737959D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orchard.Framework", "Orchard.Framework\Orchard.Framework.csproj", "{F02947D9-AC16-40AE-9479-472D3D03902C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orchard.WarmupStarter", "Orchard.WarmupStarter\Orchard.WarmupStarter.csproj", "{498E005F-C504-4680-839F-E5D406E7B5F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B17844F-3A8C-451D-9C4E-0BB5737959D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B17844F-3A8C-451D-9C4E-0BB5737959D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B17844F-3A8C-451D-9C4E-0BB5737959D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B17844F-3A8C-451D-9C4E-0BB5737959D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F02947D9-AC16-40AE-9479-472D3D03902C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F02947D9-AC16-40AE-9479-472D3D03902C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F02947D9-AC16-40AE-9479-472D3D03902C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F02947D9-AC16-40AE-9479-472D3D03902C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{498E005F-C504-4680-839F-E5D406E7B5F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{498E005F-C504-4680-839F-E5D406E7B5F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{498E005F-C504-4680-839F-E5D406E7B5F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{498E005F-C504-4680-839F-E5D406E7B5F8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
