@@ -44,10 +44,13 @@ namespace Orchard.Projections.Services {
         public Localizer T { get; set; }
 
         public IEnumerable<TypeDescriptor<FilterDescriptor>> DescribeFilters() {
+            
             var context = new DescribeFilterContext();
 
             foreach (var provider in _filterProviders) {
+                //传入context，利用filterProvider来对context中的[ Dictionary<string, DescribeFilterFor> _describes]赋值
                 provider.Describe(context);
+
             }
             return context.Describe();
         }
@@ -174,6 +177,8 @@ namespace Orchard.Projections.Services {
         }
 
         public IEnumerable<IHqlQuery> GetContentQueries(QueryPartRecord queryRecord, IEnumerable<SortCriterionRecord> sortCriteria) {
+            
+            //得到一个FilterDescriptor的集合
             var availableFilters = DescribeFilters().ToList();
             var availableSortCriteria = DescribeSortCriteria().ToList();
 
