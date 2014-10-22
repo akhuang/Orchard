@@ -216,6 +216,12 @@ namespace Orchard.Utility.Extensions {
             return (sb.ToString().Normalize(NormalizationForm.FormC));
         }
 
+        /// <summary>
+        /// 过滤指定的字符
+        /// </summary>
+        /// <param name="subject"></param>
+        /// <param name="stripped"></param>
+        /// <returns></returns>
         public static string Strip(this string subject, params char[] stripped) {
             if(stripped == null || stripped.Length == 0 || String.IsNullOrEmpty(subject)) {
                 return subject;
@@ -227,6 +233,7 @@ namespace Orchard.Utility.Extensions {
             for (var i = 0; i < subject.Length; i++) {
                 char current = subject[i];
                 if (Array.IndexOf(stripped, current) < 0) {
+                    //cursor++: tell me the value of cursor; then increment
                     result[cursor++] = current;
                 }
             }
